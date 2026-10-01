@@ -1,29 +1,312 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Discoveries</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav button {
+            border: none;
+            background: none;
+            margin: 5px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            text-decoration: underline;
+        }
+
+        .search-box {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .search-box input {
+            width: 80%;
+            max-width: 500px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
     <h1>🧠 My Discoveries</h1>
+    <p>A collection of things I've discovered, learned and thought about.</p>
+</header>
 
-    <p>A collection of interesting things I've discovered and learned.</p>
+<nav>
+    <button onclick="showSection('discoveries')">🧠 Discoveries</button>
+    <button onclick="showSection('ideas')">💡 Ideas</button>
+    <button onclick="showSection('dates')">📅 Dates</button>
+</nav>
 
-    <hr>
+<div class="search-box">
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search my discoveries..."
+        onkeyup="searchContent()"
+    >
+</div>
 
-    <h2>September 30, 2026</h2>
+<main>
 
-    <h3>HTML</h3>
+    <!-- DISCOVERIES -->
+
+    <section id="discoveries" class="section active">
+
+        <div class="card searchable">
+            <h2>🧠DISCOVERIES</h2>
+
+            <p class="date">September 30, 2026</p>
+
+            <p>
+                <article class="card">
+    <h3>The Power of Kindness, Generosity, and Love</h3>
+    <p class="date">29-08-2026</p>
 
     <p>
-        Today I discovered that an HTML file can be opened
-        in a web browser and can become a webpage.
+        Sometimes, the smallest act of kindness can become one of the biggest moments
+        in someone's life—and the crazy part is, we mostly never know about it.
     </p>
 
-    <hr>
+    <p>
+        This is what I discovered about the power of being kind, generous, and loving
+        in the most expressible way.
+    </p>
 
-    <h2>More discoveries coming soon...</h2>
+    <p>
+        When you choose to be kind, generous, and loving, look for an opportunity to
+        make a meaningful difference in someone's life—especially by doing something
+        for them that nobody has done before. The moment you see an opportunity to
+        help, take it as a chance to become part of someone's story in a way they may
+        remember forever.
+    </p>
+
+    <p>
+        The truth is, it is possible to make your way into someone's life through a
+        sincere act of kindness. Kindness is a superpower—and those who understand
+        its power use it wisely.
+    </p>
+
+    <p>
+        Always remember that whenever you help someone, you are also helping yourself
+        in the process. The good you give to others can create connections,
+        opportunities, and memories that may return to you in ways you never expected.
+    </p>
+
+    <p>
+        And always remember that kindness, generosity, and love are among the few
+        things that can leave a mark in someone's life forever—
+        <strong>in a positive way</strong>.
+    </p>
+
+    <p>
+        Sometimes, the greatest kindness is simply choosing to help without waiting
+        to be asked, when you genuinely believe your help could make a positive
+        difference. It is one of the greatest forms of kindness because it comes from
+        noticing someone's need and choosing to care enough to act.
+    </p>
+
+    <p>
+        The more you help others succeed, in anything, the more help you'll get as well.
+        In the end, true richness is not measured only by what you have, but also by
+        how many lives you have helped make better, because the richest person may
+        not be the one who has the most, but the one who has given the most of
+        themselves to help others rise.
+    </p>
+
+    <p class="author">
+        <em>Author of the Discovery</em><br>
+        <em>— Daniel JRN</em>
+    </p>
+</article>
+
+            </p>
+        </div>
+
+        <div class="card searchable">
+            <h2></h2>
+
+            <p style="text-align: center; margin-top: 30px; font-style: italic;">
+    This is just the beginning. More discoveries to come…
+</p>
+                        
+ 
+            
+        </div>
+
+    </section>
+
+
+    <!-- IDEAS -->
+
+    <section id="ideas" class="section">
+
+        <div class="card searchable">
+            <h2>My Discoveries Website</h2>
+
+            <p class="date">September 30, 2026</p>
+
+            <p>
+                Create a personal website where I can keep interesting
+                discoveries, ideas and things I learn over time.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- DATES -->
+
+    <section id="dates" class="section">
+
+        <div class="card">
+            <h2>September 30, 2026</h2>
+
+            <p>
+                Started creating My Discoveries.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    My Discoveries © 2026
+</footer>
+
+
+<script>
+
+    function showSection(sectionId) {
+
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        document.getElementById(sectionId).classList.add('active');
+
+        document.getElementById('search').value = '';
+
+        const cards = document.querySelectorAll('.searchable');
+
+        cards.forEach(card => {
+            card.style.display = 'block';
+        });
+    }
+
+
+    function searchContent() {
+
+        const searchText =
+            document.getElementById('search').value.toLowerCase();
+
+        const cards =
+            document.querySelectorAll('.searchable');
+
+        cards.forEach(card => {
+
+            const content =
+                card.textContent.toLowerCase();
+
+            if (content.includes(searchText)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+
+        });
+    }
+
+</script>
 
 </body>
 </html>
+```
